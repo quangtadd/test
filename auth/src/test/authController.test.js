@@ -17,9 +17,9 @@ describe("User Authentication", () => {
   });
 
   after(async () => {
-    await app.authController.authService.deleteTestUsers();
-    await app.disconnectDB();
-    app.stop();
+//    await app.authController.authService.deleteTestUsers();
+//    await app.disconnectDB();
+//    app.stop();
   });
 
   describe("POST /register", () => {
