@@ -63,7 +63,7 @@ jobs:
 
           # PRODUCT
           mkdir -p product
-          cat > product/.env << EOF'
+          cat > product/.env << 'EOF'
           MONGODB_PRODUCT_URI=mongodb://127.0.0.1:27017/product_test
           JWT_SECRET=${{ secrets.JWT_SECRET }}
           # RABBITMQ_URL nếu code product đọc từ env (khớp với app.setupMessageBroker())
